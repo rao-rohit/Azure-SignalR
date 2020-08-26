@@ -1,0 +1,56 @@
+﻿@page
+@model BuyerModel
+@{
+    ViewData["Title"] = "Buyer View";
+}
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@@aspnet/signalr@1.1.2/dist/browser/signalr.js"></script>
+<div class="row">
+    <form method="Post" asp-page-handler="Submit">
+
+        <div class="form-group">
+
+            <label asp-for="BuyerName" class="control-label">Your Name</label>
+            <input asp-for="BuyerName" class="form-control" />
+
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Item" class="control-label"></label>
+
+            <select id="ddlItems" asp-for="Item" asp-items="@((List<SelectListItem>)ViewData["Items"])" class="form-control">
+                <option></option>
+
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Quantity" class="control-label"></label>
+            <select id="ddlQuantity" asp-for="Quantity" asp-items="@((List<SelectListItem>)ViewData["Quantity"])" class="form-control">
+                <option></option>
+
+            </select>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary" />
+    </form>
+</div>
+
+<script>
+    $(document).ready(function () {
+        var signalRHubConnection = new signalR.HubConnectionBuilder()
+            .withUrl("https://processorderfunctionappdemo.azurewebsites.net/api")
+            .configureLogging(signalR.LogLevel.Information)
+            .build();
+
+        signalRHubConnection.start().then(function () {
+            console.log("Signal R Connection Established Successfully");
+        });
+
+        signalRHubConnection.on('supplierresponse', function (message) {
+            alert(message);
+        });
+
+    })
+</script>

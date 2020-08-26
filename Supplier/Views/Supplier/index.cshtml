@@ -1,0 +1,111 @@
+﻿@model IEnumerable<Entities.ActiveOrder>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@@aspnet/signalr@1.1.2/dist/browser/signalr.js"></script>
+
+<h1>Open Orders</h1>
+<input type="button" id="btnRefresh" value="Refresh"  class="btn btn-primary" /> 
+<p>
+
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BuyerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ItemName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.BuyerName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ItemName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Quantity)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Status)
+    </td>
+    <td>
+        <input type="button" id="btnAccept" value="Accept" orderId="@item.OrderId" class="btn btn-primary" />
+        <input type="button" id="btnReject" value="Reject" orderId="@item.OrderId" class="btn btn-primary" />
+    </td>
+</tr>}
+    </tbody>
+</table>
+
+
+<script>
+
+    $(document).ready(function ()
+    {
+        //Signal R Setup - Setting up our Binding our function App Url
+        var signalRHubConnection = new signalR.HubConnectionBuilder()
+            .withUrl("https://processorderfunctionappdemo.azurewebsites.net/api")
+            .configureLogging(signalR.LogLevel.Information)
+            .build();
+
+        //Calls when signalR connection established
+         signalRHubConnection.start().then(function () {
+            console.log("Signal R Connection Established Successfully");
+        });
+
+        //Calls when buyer submit a new order/request. We will get the notifivation on supplier side
+        //Here - "newOrderSubmitted", SignalR will look for this name on UI to send the notification
+        // newOrderSubmitted - is setup in function app also as target for notification
+        signalRHubConnection.on('newOrderSubmitted', function (orderDetails) {
+
+            alert(orderDetails.BuyerName + ", Has submitted an order for item: " + orderDetails.ItemName + ". Kindly click on 'Refresh' to load the new orders.");
+
+        });
+            
+        //Event bind - to refresh the current page, to load the new orders
+        $("#btnRefresh").click(function () {
+            window.location.href = window.location.href;        
+            });
+
+        //Event bind - When supplier accepts an order, We send the supplier response to buyer and remove that buyer order from UI
+        $("#btnAccept").click(function () {
+            var id = $(this).attr("orderId");
+            SendSupplierResponse(id, 'Approved');
+        });
+
+         //Event bind - When supplier rejects an order, We send the supplier response to buyer and remove that buyer order from UI
+        $("#btnReject").click(function () {
+            var id = $(this).attr("orderId");
+            SendSupplierResponse(id, 'Rejected');
+        });
+
+        //calling server method to update the order status as per supplier response
+        function SendSupplierResponse(id, status) {
+            $.ajax({
+                url: "Supplier/SupplierResponse?orderId=" + id + "&status=" + status,
+                
+                success: function (html) {
+                    alert("Notification sent to the buyer.");
+                    window.location.href = window.location.href;  
+                }
+            });
+    }
+
+
+    })</script>
+
+
+
