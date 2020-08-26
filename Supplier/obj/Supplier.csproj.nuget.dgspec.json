@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\RohitGit\\Shopper\\Supplier\\Supplier.csproj": {}
+    "D:\\Git\\AzureSignaR\\Supplier\\Supplier.csproj": {}
   },
   "projects": {
-    "D:\\RohitGit\\Shopper\\Entities\\Entities.csproj": {
+    "D:\\Git\\AzureSignaR\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RohitGit\\Shopper\\Entities\\Entities.csproj",
+        "projectUniqueName": "D:\\Git\\AzureSignaR\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "D:\\RohitGit\\Shopper\\Entities\\Entities.csproj",
+        "projectPath": "D:\\Git\\AzureSignaR\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Manisha\\.nuget\\packages\\",
-        "outputPath": "D:\\RohitGit\\Shopper\\Entities\\obj\\",
+        "outputPath": "D:\\Git\\AzureSignaR\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "D:\\RohitGit\\Shopper\\Shared\\Shared.csproj": {
+    "D:\\Git\\AzureSignaR\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RohitGit\\Shopper\\Shared\\Shared.csproj",
+        "projectUniqueName": "D:\\Git\\AzureSignaR\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "D:\\RohitGit\\Shopper\\Shared\\Shared.csproj",
+        "projectPath": "D:\\Git\\AzureSignaR\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\Manisha\\.nuget\\packages\\",
-        "outputPath": "D:\\RohitGit\\Shopper\\Shared\\obj\\",
+        "outputPath": "D:\\Git\\AzureSignaR\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -120,14 +120,14 @@
         }
       }
     },
-    "D:\\RohitGit\\Shopper\\Supplier\\Supplier.csproj": {
+    "D:\\Git\\AzureSignaR\\Supplier\\Supplier.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RohitGit\\Shopper\\Supplier\\Supplier.csproj",
+        "projectUniqueName": "D:\\Git\\AzureSignaR\\Supplier\\Supplier.csproj",
         "projectName": "Supplier",
-        "projectPath": "D:\\RohitGit\\Shopper\\Supplier\\Supplier.csproj",
+        "projectPath": "D:\\Git\\AzureSignaR\\Supplier\\Supplier.csproj",
         "packagesPath": "C:\\Users\\Manisha\\.nuget\\packages\\",
-        "outputPath": "D:\\RohitGit\\Shopper\\Supplier\\obj\\",
+        "outputPath": "D:\\Git\\AzureSignaR\\Supplier\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -146,11 +146,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\RohitGit\\Shopper\\Entities\\Entities.csproj": {
-                "projectPath": "D:\\RohitGit\\Shopper\\Entities\\Entities.csproj"
+              "D:\\Git\\AzureSignaR\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\Git\\AzureSignaR\\Entities\\Entities.csproj"
               },
-              "D:\\RohitGit\\Shopper\\Shared\\Shared.csproj": {
-                "projectPath": "D:\\RohitGit\\Shopper\\Shared\\Shared.csproj"
+              "D:\\Git\\AzureSignaR\\Shared\\Shared.csproj": {
+                "projectPath": "D:\\Git\\AzureSignaR\\Shared\\Shared.csproj"
               }
             }
           }

@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RohitGit\\Shopper\\Entities\\Entities.csproj",
+      "projectUniqueName": "D:\\Git\\AzureSignaR\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "D:\\RohitGit\\Shopper\\Entities\\Entities.csproj",
+      "projectPath": "D:\\Git\\AzureSignaR\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\Manisha\\.nuget\\packages\\",
-      "outputPath": "D:\\RohitGit\\Shopper\\Entities\\obj\\",
+      "outputPath": "D:\\Git\\AzureSignaR\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\RohitGit\\Shopper\\Shared\\Shared.csproj": {}
+    "D:\\Git\\AzureSignaR\\Shared\\Shared.csproj": {}
   },
   "projects": {
-    "D:\\RohitGit\\Shopper\\Shared\\Shared.csproj": {
+    "D:\\Git\\AzureSignaR\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RohitGit\\Shopper\\Shared\\Shared.csproj",
+        "projectUniqueName": "D:\\Git\\AzureSignaR\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "D:\\RohitGit\\Shopper\\Shared\\Shared.csproj",
+        "projectPath": "D:\\Git\\AzureSignaR\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\Manisha\\.nuget\\packages\\",
-        "outputPath": "D:\\RohitGit\\Shopper\\Shared\\obj\\",
+        "outputPath": "D:\\Git\\AzureSignaR\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

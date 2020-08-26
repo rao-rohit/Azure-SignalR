@@ -6812,11 +6812,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RohitGit\\Shopper\\Buyer\\Buyer.csproj",
+      "projectUniqueName": "D:\\Git\\AzureSignaR\\Buyer\\Buyer.csproj",
       "projectName": "Buyer",
-      "projectPath": "D:\\RohitGit\\Shopper\\Buyer\\Buyer.csproj",
+      "projectPath": "D:\\Git\\AzureSignaR\\Buyer\\Buyer.csproj",
       "packagesPath": "C:\\Users\\Manisha\\.nuget\\packages\\",
-      "outputPath": "D:\\RohitGit\\Shopper\\Buyer\\obj\\",
+      "outputPath": "D:\\Git\\AzureSignaR\\Buyer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6835,11 +6835,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\RohitGit\\Shopper\\Shared\\Shared.csproj": {
-              "projectPath": "D:\\RohitGit\\Shopper\\Shared\\Shared.csproj"
+            "D:\\Git\\AzureSignaR\\Shared\\Shared.csproj": {
+              "projectPath": "D:\\Git\\AzureSignaR\\Shared\\Shared.csproj"
             },
-            "D:\\RohitGit\\Shopper\\Supplier\\Supplier.csproj": {
-              "projectPath": "D:\\RohitGit\\Shopper\\Supplier\\Supplier.csproj"
+            "D:\\Git\\AzureSignaR\\Supplier\\Supplier.csproj": {
+              "projectPath": "D:\\Git\\AzureSignaR\\Supplier\\Supplier.csproj"
             }
           }
         }

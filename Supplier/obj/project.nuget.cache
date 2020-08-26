@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YV2+k9r7AgSSR7dAxdDD3zqHg2Oc0sWmW3ryx6Kn6yrFG9bMDY1BaMg3bKJEqcIIRmquoEi+QafB9kh6Hz56+A==",
+  "dgSpecHash": "KmS6dWIySQNXgBIuekC8zkFXIjZ+IUQsk7Sdedm2UkWM2DD5B8fJzHyMM1DLFH9oBQJysjTK48zCuTz6HPN5xQ==",
   "success": true,
-  "projectFilePath": "D:\\RohitGit\\Shopper\\Supplier\\Supplier.csproj",
+  "projectFilePath": "D:\\Git\\AzureSignaR\\Supplier\\Supplier.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Manisha\\.nuget\\packages\\microsoft.azure.amqp\\2.4.2\\microsoft.azure.amqp.2.4.2.nupkg.sha512",
     "C:\\Users\\Manisha\\.nuget\\packages\\microsoft.azure.servicebus\\4.1.3\\microsoft.azure.servicebus.4.1.3.nupkg.sha512",

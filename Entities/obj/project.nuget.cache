@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eXdkCuU2CNhhUBsEkhK/KfeKVXlZJ03WYrw34zgehCCs7NTlHZq+W/nTRn2wzJgAljDZo7UoyXq3qOwRYgmROw==",
+  "dgSpecHash": "51EaQ5LfTmWpcH6ZLD8QmQvOhLAtHblJ/w/pr7jFfBQ4YKH8g4MDgHt2IOKHjZD9Ygp8LjpPqvf9tPJTzkxA4w==",
   "success": true,
-  "projectFilePath": "D:\\RohitGit\\Shopper\\Entities\\Entities.csproj",
+  "projectFilePath": "D:\\Git\\AzureSignaR\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Manisha\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Manisha\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
