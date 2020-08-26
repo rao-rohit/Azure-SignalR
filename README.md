@@ -20,6 +20,7 @@ Visual Studio 2019 (For buyer and supplier application)
  
 <b>Project Structure: </b>
 
+<img src="https://github.com/rao-rohit/Azure-SignalR/blob/master/git/ProjectStructure.JPG"  >
 
  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Entities - Contains a class "ActiveOrder" which is used for storing the active orders data from UI and Database
@@ -30,11 +31,14 @@ Visual Studio 2019 (For buyer and supplier application)
 
 <b>Design/Flow:</b>
  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Buyer: </b>
+<b>Buyer: </b>
+<br/>
            
+ <img src="https://github.com/rao-rohit/Azure-SignalR/blob/master/git/Buyer.JPG"   >
+ <br/>
+ <br/>
+<b>Supplier:</b>
+<br/>
  
  
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Supplier:</b>
- 
- 
- 
+<img src="https://github.com/rao-rohit/Azure-SignalR/blob/master/git/Supplier.JPG"  >
